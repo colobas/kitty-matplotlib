@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kitty-matplotlib"
+version = "0.1.0"
+dependencies = ["matplotlib", "ipython"]
+
+[project.entry-points."ipython.extensions"]
+kitty_matplotlib = "kitty_matplotlib:load_ipython_extension"
