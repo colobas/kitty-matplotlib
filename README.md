@@ -35,3 +35,14 @@ import matplotlib.pyplot as plt
 plt.plot([1, 2, 3], [1, 4, 9])
 plt.show()
 ```
+
+Control the displayed terminal size with `--size COLUMNSxROWS`:
+
+```python
+%matplotlib_kitty --size 100x40
+
+import matplotlib.pyplot as plt
+plt.figure(figsize=(12, 6), dpi=150)
+plt.plot([1, 2, 3], [1, 4, 9])
+plt.show()
+```
